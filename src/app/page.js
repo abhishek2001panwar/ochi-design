@@ -8,11 +8,16 @@ import Marquee from '../pages/Marquee'
 import About from '../pages/About'
 import Eyes from '../pages/Eyes'
 import Featured from '../pages/Featured'
+import Feature from '../pages/Feature'
+import Cta from '../pages/Cta'
+import Footer from '../pages/Footer'
+
 import LocomotiveScroll from 'locomotive-scroll';
 
 
 
 function page() {
+
   useEffect(() => {
     const locomotiveScroll = new LocomotiveScroll();
     
@@ -28,6 +33,9 @@ function page() {
       <About />
       <Eyes />
       <Featured />
+      <Feature/>
+      <Cta/>
+      <Footer/>
     </div>
   )
 }

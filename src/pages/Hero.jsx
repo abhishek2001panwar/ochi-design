@@ -1,5 +1,8 @@
 import React from "react";
 import {motion} from 'framer-motion'
+import Button from "../components/Button";
+import { IoArrowDownCircle } from "react-icons/io5";
+
 
 
 
@@ -12,15 +15,15 @@ function Hero() {
         {["we create", "eye opening", "presentations"].map((item, index) => {
           return (
             <div  key={index} className="masker leading-none ">
-              <h1 className=" text-[5.5vw] font-['Founders_Grotesk_X-Condensed'] uppercase tracking-tight">
+              <h1 className=" text-[6.5vw] overflow-hidden leading-none font-['Founders_Grotesk_X_Condensed'] uppercase font-bold ">
                 {index === 1 ? (
                   <>
                     <motion.div
                     initial={{width: 0}}
                     animate={{width: "8%"}}
-                    transition={{ease: "linear" , delay: .1 }}
-                     className="inline-block w-24 mr-2 rounded-md h-16 ">
-                        <img src={''} alt="" />
+                    transition={{ease: 'linear' , delay: .3 }}
+                     className="inline-block  mr-2 rounded-md h-16 border bg-[#084c44] ">
+                        <img className='object-cover  '  src='' alt="" />
                      </motion.div>
                   </>
                 ) : (
@@ -40,11 +43,15 @@ function Hero() {
           return <a href="" key={index}>{item}</a>;
         })}
 
-        <div className="start flex gap-1">
-          <button className="px-5 py-2 border rounded-full text-sm  uppercase font-bold">
-            start the project
-          </button>
-          <span className=" border px-4 py-2 rounded-full ">+</span>
+        <div className="start flex gap-1 items-center">
+          <Button
+            varient="primary"
+            label="start the project"
+          
+          />
+          <span className="text-[3vw]  text-center "><IoArrowDownCircle />
+
+          </span>
         </div>
       </div>
     </div>
