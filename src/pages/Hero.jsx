@@ -2,6 +2,9 @@ import React from "react";
 import {motion} from 'framer-motion'
 import Button from "../components/Button";
 import { IoArrowDownCircle } from "react-icons/io5";
+import { CgArrowBottomRightO } from "react-icons/cg";
+import { FaStar } from "react-icons/fa";
+
 
 
 
@@ -14,16 +17,17 @@ function Hero() {
       <div className="pt-52 px-20">
         {["we create", "eye opening", "presentations"].map((item, index) => {
           return (
-            <div  key={index} className="masker leading-none ">
-              <h1 className=" text-[6.5vw] overflow-hidden leading-none font-['Founders_Grotesk_X_Condensed'] uppercase font-bold ">
+            <div  key={index} className="masker ">
+              <h1 className=" text-[5.5vw] overflow-hidden leading-none font-['Founders_Grotesk_X-Condensed'] uppercase font-bold ">
                 {index === 1 ? (
                   <>
                     <motion.div
                     initial={{width: 0}}
                     animate={{width: "8%"}}
                     transition={{ease: 'linear' , delay: .3 }}
-                     className="inline-block  mr-2 rounded-md h-16 border bg-[#084c44] ">
-                        <img className='object-cover  '  src='' alt="" />
+                     className="inline-block  mr-2 rounded-md text-md font-light  ">
+                      
+                    
                      </motion.div>
                   </>
                 ) : (

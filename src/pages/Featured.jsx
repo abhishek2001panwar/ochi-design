@@ -10,9 +10,9 @@ function Featured() {
         <div className="innercard-container">
           <h1 className="font-bold uppercase p-3">Salience Labs</h1>
           <div className="innercard w-full relative">
-            <h1 className="absolute text-8xl font-bold left-full text-[#d0ec6c] -translate-x-1/2 top-1/2 -translate-y-1/2">
+            {/* <h1 className="absolute text-8xl font-bold left-full text-[#d0ec6c] -translate-x-1/2 top-1/2 -translate-y-1/2">
               FYRE
-            </h1>
+            </h1> */}
             <img
               className="rounded-md"
               src="https://ochi.design/wp-content/uploads/2025/02/Salience_Website_cover-1326x1101.png"
@@ -24,9 +24,9 @@ function Featured() {
         <div className="innercard-container">
           <h1 className="font-bold uppercase p-3">Cardboard Spaceship</h1>
           <div className="innercard w-full relative">
-            <h1 className="absolute text-8xl font-bold right-full text-[#d0ec6c] translate-x-1/2 top-1/2 -translate-y-1/2">
+            {/* <h1 className="absolute text-8xl font-bold right-full text-[#d0ec6c] translate-x-1/2 top-1/2 -translate-y-1/2">
               VISE
-            </h1>
+            </h1> */}
             <img
               className="rounded-md"
               src="https://ochi.design/wp-content/uploads/2024/08/CS_Website_1-1326x1101.png"
