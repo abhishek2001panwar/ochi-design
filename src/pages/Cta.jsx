@@ -3,7 +3,7 @@ import Button from '../components/Button'
 
 function Cta() {
   return (
-    <div className="w-full h-screen bg-[#d0ec6c] flex items-center justify-center flex-col ">
+    <div className="w-full py-20 bg-[#d0ec6c] flex items-center justify-center flex-col ">
       <div className="masker ">
         <h1 className='text-[9vw] font-["Founders_Grotesk_Condensed"] font-bold uppercase leading-none'>
           Ready
